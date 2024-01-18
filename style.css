@@ -1,0 +1,276 @@
+/* UI Kit */
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b6b6b6;
+  padding: 15px;
+}
+
+.last-row {
+  border-bottom: none;
+}
+
+#total-msg {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+  margin-top: 2vh;
+  margin-right: 1vw;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.delete {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  margin: 20px;
+  color: #D4A373;
+  border: 1px #D4A373 solid;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#btn {
+  margin-top: 2vh;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: rgb(216,129,51);
+  font-size: 12px;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#btn:hover {
+  outline: 1px #006D77 solid;
+}
+
+/* mon CSS */
+body{
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Noto Serif", sans-serif;
+  font-size: 30px;
+  color: rgb(216,129,51);
+}
+h2 {
+  font-family: "Noto Serif", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+p {
+  font-size: 12px;
+}
+
+#container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 20px;
+}
+#header{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+/* Search*/
+#search-container {
+  margin-right: 2vh;
+  width: 45vw;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+}
+#search-container input {
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.my-color{
+ color: #6aa2e0;
+ font-size: 30px;
+}
+#add{
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+#add-container{
+  display: flex;
+  justify-content: center;
+}
+#add-section{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243,213,69, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px;
+  max-width: 250px;
+  min-width: 150px;
+  height: 250px;
+  width: 80%;
+}
+#add-section input{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  height : 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  vertical-align: middle;
+  font-style: italic;
+  color: rgb(169,166,166)
+}
+.ajout{
+  font-size: 14px;
+}
+
+#books{
+  grid-row-start: 2;
+  grid-row-end: 12;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  margin-left: 20px;
+}
+#book-container{
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.singleBook{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 250px;
+}
+.priority-1{
+  background-color: rgb(216,129,51, 0.15);
+}
+.priority-2{
+  background-color: rgb(216,129,51, 0.05);
+}
+
+
+.cover {
+  max-width: 80%;
+  max-height: 60%;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Noto Serif";
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Illustration pile de livres + nombre de livres */
+#books-pile{
+  grid-row-start: 9;
+  grid-row-end: 13;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+#pile{
+  height: 400px;
+  width: 300px;
+  position:absolute;
+  bottom:50px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#books-on-pile{
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:0;
+}
+#books-on-pile2{
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:0;
+  left: 0;
+}
+#books-on-pile3{
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:100px;
+}
+#books-on-pile4{
+  height: 100px;
+  width: 100px;
+  position:absolute;
+  bottom:200px;
+}
+#nb-msg{
+  padding: 5px;
+  margin: 10px;
+}
+.livres{
+  font-family: "Noto Sans";
+  font-size: 14px;
+  color: #7c7c7c;
+}
+
+/* footer */
+#footer{
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #7c7c7c;
+}
+.credits a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #7c7c7c;
+}

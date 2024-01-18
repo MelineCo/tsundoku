@@ -1,0 +1,163 @@
+<!-- Insert your code here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Tsundoku</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header" class="cell">
+            <div id="logo-container">
+                <img class="logo" src="images/etagere-a-livres.png" />
+                <h1>TSUNDOKU</h1>
+            </div>
+            <div>
+                <input id="search-container" type="text" placeholder=" 🔎 Chercher un livre..." />
+                <button type="button" id="btn">Recherche</button>
+            </div>
+        </div>
+        <div id="add">
+            <div id="add-container">
+                <div id="add-section" class="cell">
+                    <h2>Ajout d'un livre</h2>
+                    <input id="book-title" type="text" placeholder="Titre" />
+                    <input id="book-cover" type="url" placeholder="Url de la couverture" />
+                    <div id="priorite">
+                        <input type="checkbox" id="prioritaire" name="prioritaire" checked />
+                        <label class="ajout" for="prioritaire">Lecture prioritaire</label>
+                    </div>
+        
+                    <button type="button" id="btn">Ajouter à la pile</button>
+                </div>
+            </div>
+        </div>
+        <div id="books" class="cell">
+            <div id="book-container">
+                <div class="singleBook priority-1">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/51E2055ZGUL._SL1000_.jpg" />
+                    <div>
+                        <p class="title">Clean code</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-1">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/91hUer84PpL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Javascript: The definitive guide</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-1">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/613ZTDcDsiL._SL1500_.jpg" />
+                    <div>
+                        <p class="title priority-2">HTML & CSS</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/61LDxwmB9JL._SL1400_.jpg" />
+                    <div>
+                        <p class="title">Méthodes de design UX</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/81h4jxKvcmS._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Head first Javascript Programming</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/61PT0wlYx+L._SL1400_.jpg" />
+                    <div>
+                        <p class="title">Sprint</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/61mIq2iJUXL._SL1360_.jpg" />
+                    <div>
+                        <p class="title">Cracking the code interview</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/81BdMC18EUL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Grokking algorithms</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/61CVP-MfUoL._SL1360_.jpg" />
+                    <div>
+                        <p class="title">Data structures & algorithms made easy</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/91hgdExbtiL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">MongoDB: The definitive guide</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/81dmHMoJDjL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Building Microservices</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/91ahAhFS-LL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Eloquent Javascript</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/71Nxk9VhSTL._SL1043_.jpg" />
+                    <div>
+                        <p class="title">The pragmatic programmer</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/51nL96Abi1L.jpg" />
+                    <div>
+                        <p class="title">Design pattern</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/81sOrykcTKL._SL1500_.jpg" />
+                    <div>
+                        <p class="title">Web developpement with Node and Express</p>
+                    </div>
+                </div>
+                <div class="singleBook priority-2">
+                    <img class="cover" src="https://m.media-amazon.com/images/I/61N1Yn4Nf5L._SL1500_.jpg" />
+                    <div>
+                        <p class="title">The road to React</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="books-pile">
+            <div id="pile">
+                
+            </div>
+            <div id="nb-msg">
+                <p class="livres"><span id="count"></span> livres ajoutés</p>
+            </div>
+        </div>
+        <div id="footer" class="cell">
+            <p>Réalisé par Emeline Courcelle 🪄✨
+            <br>
+            <span class="credits"><a href="https://www.flaticon.com/fr/packs/book-store-13" title="icônes">Icônes créées par Freepik - Flaticon</a></span>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
